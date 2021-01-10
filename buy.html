@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game</title>
+        <link rel="stylesheet" href="./CSS/normalise.css">
+        <link rel="stylesheet" href="./CSS/stylebuy.css">
+        <link href="./CSS/skins/minimal/red.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <nav class="nav">
+            <div>
+                <ul class = "topbar">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="About.html">About</a>
+                    </li>
+                    <li>
+                        <a href="Game.html">Game</a>
+                    </li>
+                    <li>
+                        <a href="buy.html">Buy</a>
+                    </li>
+                    <li>
+                        <a href="moodboard.html">moodboard</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="buy">
+            <div class='Div'>
+                <!--<h2>Shop</h2>-->
+                <h2>Level shop</h2>
+            </div>
+
+            <form action="#" id="buy_form">
+                <div class='Div'> <!--Card Number-->
+                    <div class="form__group form__group--card">
+                        <label for="Card_Number">Card Number<span class="error__message"> is invalid</span></label>
+                        <input type="text" id="Card_Number">
+                    </div>
+                </div>
+
+                <div class='Div'> <!--Card Number-->
+                    <div class="form__group form__group--password">
+                        <label class = "pw" for="password" >Password<span class="error__message"> is invalid</span></label>
+                        <input type="password" id="password" />
+                    </div>
+                </div>
+
+                <div class='Div'> <!--Choose Edition-->
+                    <label for="pack" class="pack">Choose Support</label>
+
+                    <select name="pack" id="pack">
+                        <option value="1">1 euro support</option>
+                        <option value="5">5 euro support</option>
+                        <option value="10">10 euro support</option>
+                        <option value="20">20 euro support</option>
+                        <option value="50">50 euro support (legend)</option>
+                    </select>
+                </div>
+
+                <div class="Div"> <!--Adress-->
+                    <H4>Adress</H4>
+                    <div class="form__group form__group--email">
+                        <label for="email">E-Mail Adress<span class="error__message">Login or password is invalid</span></label>
+                        <input type="email" id="email">
+                    </div>
+                </div>
+
+                <div class="Div"> <!--Country-->
+                    <label class = "Country" for="Country">Country</label>
+
+                    <select name="Country" id="Country">
+                        <option value="Sweden">Sweden</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+
+                <div class="Div"> <!--Terms-->
+                    <h4>Terms and Conditions</h4>
+
+                    <input type="checkbox" name= "Terms-and-Conditions" id="Terms">
+                    <label for="Terms">I have read the Terms and Conditions</label>
+                </div>
+
+                <div class="Div"> <!--Newsletter-->
+                    <input type="checkbox" name = "newsletter" id="Letter">
+                    <label for="Letter">I Would like to follow the progress of the game (newsletter).</label>
+                </div>
+
+                <div class="Div"> <!--Buy Now-->
+                    <div class="form__group">
+                        <input class="button" id="btnBuy" type="submit" value="Buy Now">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="pop hidden">
+            <div class="box">
+                <h2>Thank you for your support.</h2>
+            </div>
+        </div>
+
+        <footer>
+            <div class="legal">
+                <div>
+                    <ul>
+                        <li class="C">
+                            &copy; aTotallyLegitCompany
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./Js/jquery-3.5.1.min.js"></script>
+        <script src="./Js/icheck.min.js"></script>
+        <script src="./Js/JsBuy.js"></script>
+    </body>
+</html>
